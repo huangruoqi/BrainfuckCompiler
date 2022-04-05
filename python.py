@@ -1,4 +1,3 @@
-import os
 import sys
 import array
 from collections import deque
@@ -52,9 +51,11 @@ def main():
         elif code[index]=='>': current = (current+1)%TAPE_SIZE
         elif code[index]==',':
             if len(input_container)==0: 
-                for i in input():
+                user_input = ''
+                while (len(user_input.strip())==0):
+                    user_input = input()
+                for i in user_input:
                     input_container.append(i)
-                input_container.append('\n')
             tape[current] = ord(input_container.popleft())
         elif code[index]=='.': print(chr(tape[current]), end='')
         elif code[index]=='[': 
