@@ -65,6 +65,7 @@ def main():
             index = pr[index]-1
         index+=1
 
+    print(tape)
     
     
         
