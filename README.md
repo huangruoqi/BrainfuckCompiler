@@ -1,5 +1,5 @@
 # Brainfuck compiler implementation in various languages
-- python:
+- python:    
 ```python python.py test.bf```
 - java:  
 ```javac java.java; java java test.bf```
